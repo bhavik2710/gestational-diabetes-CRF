@@ -7,7 +7,7 @@ class Info(models.Model):
     patient_id = models.AutoField(primary_key=True)
     crf_filled_by = models.CharField(max_length=300, default="", )
     date_crf = models.DateField()
-    place = models.CharField(max_length=300, default="")
+    Location = models.CharField(max_length=300, default="")
     name = models.CharField(max_length=300, default="")
     uhid = models.IntegerField()
     husband_name = models.CharField(max_length=300, default="")
